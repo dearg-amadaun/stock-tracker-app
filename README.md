@@ -1,4 +1,4 @@
-# stock-tracker-app
+## stock-tracker-app
 
 ### React based stock tracking app.
 Wanted to get more overall practice building in react, styling with css, and making API calls in react. 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { iex }  from '../config/iex.js';
+import { stock } from '../resources/stock.js';
 
 class StockRow extends Component {
 
@@ -11,12 +11,8 @@ class StockRow extends Component {
     }
 
     componentDidMount() {
-        const url = `${iex.base_url}/stock/${this.props.ticker}/intraday-prices?chartLast=1&token=${iex.api_token}`
-
-        fetch(url)
-        .then((response) => response.json())
+        stock.latestPrice(this.props.ticker)
         .then((data) => {
-            console.log(data)
             this.setState({
                 data: data[data.length - 1]
             })

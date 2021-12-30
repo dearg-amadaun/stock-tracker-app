@@ -17,10 +17,10 @@ function App() {
             </tr>
           </thead>
             <tbody>
-              <StockRow ticker="aapl" />
-              <StockRow ticker="goog" />
-              <StockRow ticker="gme" />
-              <StockRow ticker="amc" />
+              <StockRow ticker="AAPL" />
+              <StockRow ticker="GOOG" />
+              <StockRow ticker="GME" />
+              <StockRow ticker="AMC" />
             </tbody>
         </table>
       </div>
