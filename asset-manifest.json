@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/stock-tracker-app/static/css/main.05b96f50.css",
-    "main.js": "/stock-tracker-app/static/js/main.9d162946.js",
+    "main.js": "/stock-tracker-app/static/js/main.ca085ee8.js",
     "static/js/787.1345630b.chunk.js": "/stock-tracker-app/static/js/787.1345630b.chunk.js",
     "index.html": "/stock-tracker-app/index.html",
     "main.05b96f50.css.map": "/stock-tracker-app/static/css/main.05b96f50.css.map",
-    "main.9d162946.js.map": "/stock-tracker-app/static/js/main.9d162946.js.map",
+    "main.ca085ee8.js.map": "/stock-tracker-app/static/js/main.ca085ee8.js.map",
     "787.1345630b.chunk.js.map": "/stock-tracker-app/static/js/787.1345630b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.05b96f50.css",
-    "static/js/main.9d162946.js"
+    "static/js/main.ca085ee8.js"
   ]
 }
