@@ -16,9 +16,9 @@ class StockRow extends Component {
         fetch(url)
         .then((response) => response.json())
         .then((data) => {
-
+            console.log(data)
             this.setState({
-                data: data
+                data: data[data.length - 1]
             })
         })
     }
