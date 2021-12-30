@@ -10,22 +10,23 @@ class StockRow extends Component {
         }
     }
 
-    componentDidMount() {
-        stock.latestPrice(this.props.ticker)
-        .then((data) => {
-            this.setState({
-                data: data[data.length - 1]
-            })
+    applyData(data) {
+        this.setState({
+            data: data
         })
+    }
+
+    componentDidMount() {
+        stock.latestPrice(this.props.ticker, this.applyData.bind(this))
     }
 
     render() {
         return (
             <tr>
                 <td>{this.props.ticker}</td>
-                <td>{this.state.data.close}</td>
+                <td>{this.state.data.price}</td>
                 <td>{this.state.data.date}</td>
-                <td>{this.state.data.label}</td>
+                <td>{this.state.data.time}</td>
             </tr>   
         )
     }
