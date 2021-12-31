@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { stock } from '../resources/stock.js';
 
+const changeStyle = {
+    color: '#4caf50',
+    fontSize: '0.8rem',
+    marginLeft: 5
+  }
+
 class StockRow extends Component {
 
     constructor(props) {
@@ -22,12 +28,12 @@ class StockRow extends Component {
 
     render() {
         return (
-            <tr>
-                <td>{this.props.ticker}</td>
-                <td>{this.state.data.price}</td>
-                <td>{this.state.data.date}</td>
-                <td>{this.state.data.time}</td>
-            </tr>   
+            <li className="list-group-item">
+                  <b>{this.props.ticker}</b> {this.state.data.price}
+                  <span className="change" style={changeStyle}>
+                    +13.34 (5.0%)
+                  </span>
+                </li>
         )
     }
 

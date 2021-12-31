@@ -7,7 +7,17 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <table className="table mt-5">
+        <div className="col-md-5 mt-5">
+          <div className="card">
+              <ul className="list-group list-group-flush">
+                <StockRow ticker='AAPL' />
+                <StockRow ticker='GOOG' />
+                <StockRow ticker='GME' />
+                <StockRow ticker='AMC' />
+              </ul>
+          </div>
+        </div>
+        {/* <table className="table mt-5">
           <thead>
             <tr>
               <th>Ticker</th>
@@ -22,7 +32,7 @@ function App() {
               <StockRow ticker="GME" />
               <StockRow ticker="AMC" />
             </tbody>
-        </table>
+        </table> */}
       </div>
     </div>
   );
