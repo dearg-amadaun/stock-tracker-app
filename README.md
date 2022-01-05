@@ -11,4 +11,4 @@ https://dearg-amadaun.github.io/stock-tracker-app/
 ---  
 
 ### Tutorial Link
-https://www.youtube.com/watch?v=onSKOD3RPo8
+
