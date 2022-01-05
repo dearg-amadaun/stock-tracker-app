@@ -6,17 +6,17 @@ const data = {
             change: 1.54
         },
         {
-            name: "DJI",
+            name: "NYSE",
             index: 841.42,
             change: 1.54
         },
         {
-            name: "DJI",
+            name: "Nasdaq",
             index: 841.42,
             change: 1.54
         },
         {
-            name: "DJI",
+            name: "BEX",
             index: 841.42,
             change: 1.54
         }
