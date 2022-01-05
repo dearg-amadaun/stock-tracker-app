@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/stock-tracker-app/static/css/main.05b96f50.css",
-    "main.js": "/stock-tracker-app/static/js/main.1e4c1fb7.js",
-    "static/js/787.1345630b.chunk.js": "/stock-tracker-app/static/js/787.1345630b.chunk.js",
+    "main.css": "/stock-tracker-app/static/css/main.ccfcccaf.css",
+    "main.js": "/stock-tracker-app/static/js/main.52e4e1f5.js",
     "index.html": "/stock-tracker-app/index.html",
-    "main.05b96f50.css.map": "/stock-tracker-app/static/css/main.05b96f50.css.map",
-    "main.1e4c1fb7.js.map": "/stock-tracker-app/static/js/main.1e4c1fb7.js.map",
-    "787.1345630b.chunk.js.map": "/stock-tracker-app/static/js/787.1345630b.chunk.js.map"
+    "static/media/show-chart.svg": "/stock-tracker-app/static/media/show-chart.e3cb5bfd59a28fb16f9d4f18ae14cd1e.svg",
+    "main.ccfcccaf.css.map": "/stock-tracker-app/static/css/main.ccfcccaf.css.map",
+    "main.52e4e1f5.js.map": "/stock-tracker-app/static/js/main.52e4e1f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.05b96f50.css",
-    "static/js/main.1e4c1fb7.js"
+    "static/css/main.ccfcccaf.css",
+    "static/js/main.52e4e1f5.js"
   ]
 }
