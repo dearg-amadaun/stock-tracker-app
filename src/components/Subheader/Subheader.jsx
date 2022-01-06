@@ -4,8 +4,8 @@ import styles from './subheader.module.css'
 
 export default function Subheader(props) {
     return (
-        <div class={styles.subheader}>
-            <div class={styles.container}>
+        <div className={styles.subheader}>
+            <div className={styles.container}>
                 {props.children}
             </div>
         </div>
