@@ -16,7 +16,7 @@ export default function ExchangeList(props) {
     return (
         <div className={styles.container}>
             <h1 className={styles.header}>Exchanges</h1>
-            <ul>
+            <ul className={styles.exchangeList}>
                 {renderListItems()}
             </ul>
         </div>

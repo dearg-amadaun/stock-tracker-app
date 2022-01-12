@@ -15,5 +15,6 @@ code {
 :root {
   --header-gradient-top: #38a8c3;
   --header-gradient-bottom: #2a7fa0;
-  --site-width: 1024px
+  --site-width: 1024px;
+  --exchange-green: #40d939;
 }

@@ -1,3 +1,32 @@
 .container {
-    
+    padding: 8px;
+    color: white;
+}
+
+.header {
+    font-size: 1rem;
+}
+
+.exchangeList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listItem {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.name {
+    width: 150px;
+}
+
+.index {
+    width: 100px;
+    color: var(--exchange-green);
+}
+
+.percentage {
+    color: var(--exchange-green);
 }
