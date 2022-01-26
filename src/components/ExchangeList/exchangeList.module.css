@@ -1,10 +1,11 @@
 .container {
     padding: 8px;
-    color: white;
+    color: #fff;
+    margin-right: 2.5rem;
 }
 
 .header {
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 .exchangeList {
@@ -16,6 +17,7 @@
 .listItem {
     display: flex;
     margin: 10px 0px;
+    position: relative;
 }
 
 .name {
@@ -29,4 +31,14 @@
 
 .percentage {
     color: var(--exchange-green);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: -22px;
+    top: 4px;
+    background-color: var(--exchange-green);
 }

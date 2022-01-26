@@ -3,11 +3,12 @@
         to bottom, 
         var(--header-gradient-top), 
         var(--header-gradient-bottom)
-    );
-}
-
-.conatiner {
-    max-width: var(--site-width);
-    margin: 0 auto;
-    padding: 10px;
+        );
+    }
+    
+    .container {
+        max-width: var(--site-width);
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
 }
