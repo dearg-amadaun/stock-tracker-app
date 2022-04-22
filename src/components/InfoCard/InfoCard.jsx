@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormControl } from 'react-bootstrap';
 
 import styles from "./infoCard.module.css";
 
