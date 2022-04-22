@@ -16,7 +16,7 @@ export default function TopFiveDividendStocksList(props) {
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.header}>Top Five Divident Yield Stocks</h1>
+            <h1 className={styles.header}>Top Five Dividend Yield Stocks</h1>
             <ul className={styles.dividendList}>{renderListItems()}</ul>
         </div>
     );
