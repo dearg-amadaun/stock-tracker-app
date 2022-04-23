@@ -31,7 +31,7 @@ export const getInfoCardData = (descriptor) => {
     }
 }
 
-const calculateDividendStockCurrentYear = () => {
+const calculateDividendStockCurrentYear = (stocks) => {
     const sorted = sortStocksByDividendYield(stocks);
     const year = getCurrentYear()
     return {
