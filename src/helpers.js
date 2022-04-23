@@ -40,7 +40,9 @@ const calculateDividendStockCurrentYear = (stocks) => {
     }
 }
 
-
+const calculateDividendStockCompounded = (stocks) => {
+    
+}
 
 
 
