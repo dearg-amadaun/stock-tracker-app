@@ -29,14 +29,12 @@ const data = {
             ask: 135.8,
             sector: "Industry",
             dividends: {
-                2022: 22,
-                2021: 21,
                 2020: 20,
                 2019: 19,
                 2018: 18,
-                2017: 17,
-                2016: 16,
-                2015: 15
+                2017: 15,
+                2016: 13,
+                2015: 10,
             },
             homepage: "https://www.google.com/",
             investorpage: "https://www.google.com/"

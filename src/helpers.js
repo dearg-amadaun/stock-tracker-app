@@ -21,10 +21,34 @@ export const getTopFiveDividendStocks = (stocks) => {
     });
 };
 
+export const getInfoCardData = (descriptor) => {
+    if (descriptor === "growth") {
+        return calculateDividendGrowthStock(stocks)
+    } else if (descriptor === "yieldCurrent") {
+        return calculateDividendStockCurrentYear(stocks)
+    } else if (descriptor === yieldCompounded) {
+        return calculateDividendStockCompounded(stocks)
+    }
+}
+
+const calculateDividendStockCurrentYear = () => {
+    const sorted = sortStocksByDividendYield(stocks);
+    const year = getCurrentYear()
+    return {
+        ticker: sorted.ticker,
+        amount: sorted.dividends[year]
+    }
+}
+
+
+
+
+
 export const getCurrentYear = () => {
     const date = new Date ();
     const year = date.getFullYear();
 
     return year;
 };
+
 

@@ -6,7 +6,7 @@ import ExchangeList from './components/ExchangeList/ExchangeList';
 import TopFiveDividendStocksList from './components/TopFiveDividendStocksList/TopFiveDividendStocksList';
 import InfoCard from './components/InfoCard/InfoCard';
 
-import { getTopFiveDividendStocks } from './helpers';
+import { getTopFiveDividendStocks, getInfoCardData } from './helpers';
 
 import data from './data.js'
 
@@ -23,13 +23,13 @@ function App() {
         />
         <div className={styles.infoCardContainer}>
           <InfoCard title="Highest dividend yield in current year" 
-           stock={{ ticker: "VEI", amount: 20}} 
+           stock={getInfoCardData("yieldCurrent", data.stocks)}
            />
           <InfoCard title="Highest dividend yield all time" 
-           stock={{ ticker: "VEI", amount: 20}} 
+           stock={getInfoCardData("yieldCompound", data.stocks)}
            />
           <InfoCard title="Highest dividend yield growth in past 3 years" 
-           stock={{ ticker: "VEI", amount: 20}}
+           stock={getInfoCardData("growth", data.stocks)}
            darkmode 
            />
         </div>
