@@ -22,9 +22,16 @@ function App() {
         stocks={getTopFiveDividendStocks(data.stocks)} 
         />
         <div className={styles.infoCardContainer}>
-          <InfoCard title="Highest dividend yield in current year" stock={{ ticker: "VEI", amount: 20}} />
-          <InfoCard title="Highest dividend yield all time" stock={{ ticker: "VEI", amount: 20}} />
-          <InfoCard title="Highest dividend yield growth in past 3 years" stock={{ ticker: "VEI", amount: 20}} />
+          <InfoCard title="Highest dividend yield in current year" 
+           stock={{ ticker: "VEI", amount: 20}} 
+           />
+          <InfoCard title="Highest dividend yield all time" 
+           stock={{ ticker: "VEI", amount: 20}} 
+           />
+          <InfoCard title="Highest dividend yield growth in past 3 years" 
+           stock={{ ticker: "VEI", amount: 20}}
+           darkmode 
+           />
         </div>
      </Subheader>
     </div>

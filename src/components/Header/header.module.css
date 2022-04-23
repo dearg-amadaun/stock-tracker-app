@@ -1,5 +1,4 @@
 .header {
-    width: 100%;
     padding: 10px;
     background: var(--header-gradient-top);
     display: flex;
@@ -23,7 +22,7 @@
 .logo {
     width: 35px;
     height: 35px;
-    fill: white;
+    fill: #fff;
     margin-right: 8px;
 }
 
@@ -41,6 +40,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #fff;
 }
 
