@@ -75,6 +75,9 @@ const calculateDividendGrowthStock = (stocks) => {
         return stockB.growth - stockA.growth;
     });
 
+
+console.log(sortedByGrowth)
+
     return {
         ticker: sortedByGrowth[0].ticker,
         amount: sortedByGrowth.growth
@@ -85,7 +88,7 @@ const calculateGrowth = (stock) => {
     const year = getCurrentYear()
         const comparisonYear = year -3
         
-        const total = stocks.dividends[getCurrentYear] - stock.dividends[comparisonYear]
+        const total = stocks.dividends[year] - stock.dividends[comparisonYear]
         stock.growth =total;
         return stock;
 }
