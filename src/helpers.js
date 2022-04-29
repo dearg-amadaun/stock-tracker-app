@@ -29,27 +29,37 @@ export const getInfoCardData = (descriptor) => {
     } else if (descriptor === yieldCompounded) {
         return calculateDividendStockCompounded(stocks)
     }
-}
+};
 
 const calculateDividendStockCurrentYear = (stocks) => {
     const sorted = sortStocksByDividendYield(stocks);
     const year = getCurrentYear()
     return {
-        ticker: sorted.ticker,
-        amount: sorted.dividends[year]
-    }
-}
+        ticker: sorted[0].ticker,
+        amount: sorted[0].dividends[year]
+    };
+};
 
 const calculateDividendStockCompounded = (stocks) => {
     const sortedByCompoundedYield = stocks.map(stock => {
         let total =0;
-        object.keys(stock.dividends).forEach(key => {
+        Object.keys(stock.dividends).forEach(key => {
             total += stock.dividends[key]
-        })
+        });
         stock.total = total
         return stock
     })
-}
+    .sort((stockA, stockB) => {
+        return stockB.total - stockA.total
+    });
+
+    return {
+        ticker: sortedByCompoundedYield[0].ticker,
+        amount: sortedByCompoundedYield[0].total,
+    };
+};
+
+const calculateDividendGrowthStock = () =>
 
 
 
