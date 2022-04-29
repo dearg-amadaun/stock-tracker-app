@@ -1,4 +1,4 @@
-import stocks from './data.js'
+import stocks from './data'
 
 export const sortStocksByDividendYield = (stocks) => {
     const year = getCurrentYear();
@@ -7,7 +7,7 @@ export const sortStocksByDividendYield = (stocks) => {
         return stockB.dividends[year] - stockA.dividends[year];
     });
 
-    return sorted
+    return sorted;
 };
 
 export const getTopFiveDividendStocks = (stocks) => {
@@ -88,7 +88,7 @@ const calculateGrowth = (stock) => {
     const year = getCurrentYear()
         const comparisonYear = year -3
         
-        const total = stocks.dividends[year] - stock.dividends[comparisonYear]
+        const total = stock.dividends[year] - stock.dividends[comparisonYear]
         stock.growth =total;
         return stock;
 }

@@ -53,7 +53,7 @@ const data = {
                 2018: 5,
                 2017: 6,
                 2016: 7,
-                2015: 8
+                2015: 8,
             },
             homepage: "https://www.google.com/",
             investorpage: "https://www.google.com/"
@@ -72,7 +72,7 @@ const data = {
                 2018: 13,
                 2017: 14,
                 2016: 15,
-                2015: 16
+                2015: 16,
             },
             homepage: "https://www.google.com/",
             investorpage: "https://www.google.com/"
@@ -91,7 +91,7 @@ const data = {
                 2018: 21,
                 2017: 22,
                 2016: 23,
-                2015: 24
+                2015: 24,
             },
             homepage: "https://www.google.com/",
             investorpage: "https://www.google.com/"
@@ -110,12 +110,12 @@ const data = {
                 2018: 29,
                 2017: 30,
                 2016: 31,
-                2015: 32
+                2015: 32,
             },
             homepage: "https://www.google.com/",
             investorpage: "https://www.google.com/"
         },
     ]
-}
+};
 
 export default data;
