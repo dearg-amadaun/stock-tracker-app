@@ -41,7 +41,14 @@ const calculateDividendStockCurrentYear = (stocks) => {
 }
 
 const calculateDividendStockCompounded = (stocks) => {
-    
+    const sortedByCompoundedYield = stocks.map(stock => {
+        let total =0;
+        object.keys(stock.dividends).forEach(key => {
+            total += stock.dividends[key]
+        })
+        stock.total = total
+        return stock
+    })
 }
 
 
