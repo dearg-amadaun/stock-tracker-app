@@ -60,7 +60,9 @@ const calculateDividendStockCompounded = (stocks) => {
 };
 
 const calculateDividendGrowthStock = () =>
-
+    const sortStocksByDividendYield = ( => {
+        
+    })
 
 
 export const getCurrentYear = () => {
