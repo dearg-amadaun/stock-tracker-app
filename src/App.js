@@ -6,14 +6,13 @@ import ExchangeList from './components/ExchangeList/ExchangeList';
 import TopFiveDividendStocksList from './components/TopFiveDividendStocksList/TopFiveDividendStocksList';
 import InfoCard from './components/InfoCard/InfoCard';
 
-import { getTopFiveDividendStocks, getInfoCardData, calculateDividendStockCompounded} from './helpers';
+import { getTopFiveDividendStocks, getInfoCardData } from './helpers';
 
 import data from './data.js'
 
 import styles from './app.module.css'
 
 function App() {
-  console.log(calculateDividendStockCompounded());
   return (
     <div className="App">
      <Header />
@@ -23,10 +22,12 @@ function App() {
         stocks={getTopFiveDividendStocks(data.stocks)} 
         />
         <div className={styles.infoCardContainer}>
-          <InfoCard title="Highest dividend yield in current year" 
+          <InfoCard 
+           title="Highest dividend yield in current year" 
            stock={getInfoCardData("yieldcurrent", data.stocks)}
            />
-          <InfoCard title="Highest dividend yield all time" 
+          <InfoCard 
+           title="Highest dividend yield all time" 
            stock={getInfoCardData("yieldcompound", data.stocks)}
            />
           <InfoCard title="Highest dividend yield growth in past 3 years" 

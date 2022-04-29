@@ -45,12 +45,7 @@ const calculateDividendStockCurrentYear = (stocks) => {
 export const calculateDividendStockCompounded = (stocks) => {
     const sortedByCompoundedYield = stocks
       .map((stock) => {
-        let total =0;
-        Object.keys(stock.dividends).forEach(key => {
-            total += stock.dividends[key]
-        });
-        stock.total = total
-        return stock
+        return calculateTotalDividends(stock);
     })
     .sort((stockA, stockB) => {
         return stockB.total - stockA.total
@@ -62,8 +57,37 @@ export const calculateDividendStockCompounded = (stocks) => {
     };
 };
 
-const calculateDividendGrowthStock = () => {
+const calculateTotalDividends = (stock) => {
+    let total =0;
+        Object.keys(stock.dividends).forEach(key => {
+            total += stock.dividends[key]
+        });
+        stock.total = total;
+        return stock;
+};
 
+const calculateDividendGrowthStock = (stocks) => {
+    const sortedByGrowth = stocks
+    .map((stock) => {
+        return calculateGrowth(stock)
+    })
+    .sort((stockA, stockB) => {
+        return stockB.growth - stockA.growth;
+    });
+
+    return {
+        ticker: sortedByGrowth[0].ticker,
+        amount: sortedByGrowth.growth
+    };
+};
+
+const calculateGrowth = (stock) => {
+    const year = getCurrentYear()
+        const comparisonYear = year -3
+        
+        const total = stocks.dividends[getCurrentYear] - stock.dividends[comparisonYear]
+        stock.growth =total;
+        return stock;
 }
 
 export const getCurrentYear = () => {
