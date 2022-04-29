@@ -13,7 +13,7 @@ import data from './data.js'
 import styles from './app.module.css'
 
 function App() {
-  console.log(calculateDividendStockCompounded)
+  console.log(calculateDividendStockCompounded());
   return (
     <div className="App">
      <Header />
