@@ -6,8 +6,7 @@ import ExchangeList from './components/ExchangeList/ExchangeList';
 import TopFiveDividendStocksList from './components/TopFiveDividendStocksList/TopFiveDividendStocksList';
 import InfoCard from './components/InfoCard/InfoCard';
 
-import getTopFiveDividendStocks from './helpers';
-import getInfoCardData from './helpers';
+import { getTopFiveDividendStocks, getInfoCardData} from './helpers';
 
 import data from './data.js'
 
