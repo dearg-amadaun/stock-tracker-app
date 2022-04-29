@@ -1,3 +1,5 @@
+import stocks from './data.js'
+
 export const sortStocksByDividendYield = (stocks) => {
     const year = getCurrentYear();
 
@@ -24,9 +26,9 @@ export const getTopFiveDividendStocks = (stocks) => {
 export const getInfoCardData = (descriptor) => {
     if (descriptor === "growth") {
         return calculateDividendGrowthStock(stocks)
-    } else if (descriptor === "yieldCurrent") {
+    } else if (descriptor === "yieldcurrent") {
         return calculateDividendStockCurrentYear(stocks)
-    } else if (descriptor === yieldCompounded) {
+    } else if (descriptor === "yieldcompounded") {
         return calculateDividendStockCompounded(stocks)
     }
 };
@@ -40,8 +42,9 @@ const calculateDividendStockCurrentYear = (stocks) => {
     };
 };
 
-const calculateDividendStockCompounded = (stocks) => {
-    const sortedByCompoundedYield = stocks.map(stock => {
+export const calculateDividendStockCompounded = (stocks) => {
+    const sortedByCompoundedYield = stocks
+      .map((stock) => {
         let total =0;
         Object.keys(stock.dividends).forEach(key => {
             total += stock.dividends[key]
@@ -59,11 +62,9 @@ const calculateDividendStockCompounded = (stocks) => {
     };
 };
 
-const calculateDividendGrowthStock = () =>
-    const sortStocksByDividendYield = ( => {
-        
-    })
+const calculateDividendGrowthStock = () => {
 
+}
 
 export const getCurrentYear = () => {
     const date = new Date ();
